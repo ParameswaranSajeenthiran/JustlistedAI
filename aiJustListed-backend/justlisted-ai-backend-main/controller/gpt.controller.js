@@ -10,7 +10,7 @@ exports.gptScan = async (req, res) => {
     const {data} = req.body;
     const response = await openai.createCompletion({
         model: "text-davinci-003",
-        prompt: "hi", // Append the prompt to the extracted text
+        prompt: "hi", 
         max_tokens: 2048,
         temperature: 1
     });
