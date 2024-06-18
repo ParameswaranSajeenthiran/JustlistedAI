@@ -1,5 +1,5 @@
 const axios = require('axios');
-const API_KEY = process.env.OPENAI_API_KEY;
+const API_KEY = process.env.OPEN_AI_KEY;
 const API_URL = "https://api.openai.com/v1/engines/text-davinci-003/completions";
 
 async function askGPT(prompt) {

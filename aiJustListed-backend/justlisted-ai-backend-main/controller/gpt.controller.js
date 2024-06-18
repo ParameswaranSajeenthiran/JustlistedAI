@@ -2,7 +2,7 @@ const { Configuration, OpenAIApi } = require("openai");
 
 // chat gpt connection
 const config = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY
+    apiKey: process.env.OPEN_AI_KEY
 });
 const openai = new OpenAIApi(config);
 
