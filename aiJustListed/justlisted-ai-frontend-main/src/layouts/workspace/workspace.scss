@@ -1,0 +1,36 @@
+.workspace {
+  margin-top: 75px;
+  min-height: 100%;
+  .workspaceMainBody {
+    display: flex;
+    background: var(
+      --Primary,
+      linear-gradient(90deg, #ee4335 0%, #f9aa41 100%)
+    );
+    // background: linear-gradient(243deg, #e7e9f8 0%, #fff 47.4%, #edebf8 100%);
+    padding: 25px 25px 25px 0;
+    @media screen and (width< 600px) {
+      flex-direction: column;
+      padding:  0;
+    }
+    .sidebar {
+      width: 365px;
+      overflow: hidden;
+      padding-left: 25px;
+      transition: all 5s;
+      @media screen and (width< 600px) {
+        padding-left: 0;
+        width: 100%;
+        overflow: visible;
+      }
+    }
+    .workspacecontainer {
+      padding: 0 0 0 25px;
+      width: calc(100% - 365px);
+      @media screen and (width< 600px) {
+        padding: 0 10px;
+        width: 100%;
+      }
+    }
+  }
+}

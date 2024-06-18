@@ -1,0 +1,48 @@
+
+                
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  /* height: 100%; */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+code {
+  font-family: "Poppins";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+}
+svg {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+
+#root {
+  height: 100%;
+  margin-top: 75px;
+}
+ul {
+  list-style: none;
+}
+input{
+  outline:none;
+}

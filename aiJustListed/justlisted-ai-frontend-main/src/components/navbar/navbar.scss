@@ -1,0 +1,359 @@
+.navbar {
+  background:#000;
+  height: 71px;
+  flex-shrink: 0;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  .nav-container {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0 67px 0 75px;
+    position: relative;
+    @media screen and (width< 600px) {
+      padding: 0 10px 0 10px;
+    }
+    .nav-item {
+
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      height: 100%;
+      .menuhumber {
+        display: none;
+        @media screen and (width< 600px) {
+          display: block !important;
+        }
+      }
+      .mobile-nav {
+        @media screen and (width< 600px) {
+          display: block !important;
+        }
+      }
+      .mobile-navclose {
+        @media screen and (width< 600px) {
+          display: none !important;
+        }
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media screen and (width< 600px) {
+          position: absolute;
+          top: 75px;
+          background-color: #fff;
+          left: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .nav-button {
+          color: #FFFFFF;
+          margin-left: 4px;
+
+          font-family: Hero New;
+          font-size: 11.5px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 24px;
+          cursor: default;
+          @media screen and (width< 600px) {
+            margin-left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+        .nav-buttonactive {
+          color: #BFFC00;
+
+          font-weight: 700;
+        }
+      }
+      .auth-buttons {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-bottom: 15px;
+        gap: 13px;
+        height: 100%;
+        @media screen and (width< 600px) {
+          height: auto;
+          padding-bottom: 0;
+          align-items: center;
+          gap: 3px;
+        }
+        button {
+          flex-shrink: 0;
+          border-radius: 2px;
+          padding: 0 20px;
+          color: #fff;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 10px;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          line-height: 167%;
+          height: 37px;
+          @media screen and (width< 600px) {
+            height: 27px;
+            padding: 0 10px;
+            font-size: 10px;
+          }
+        }
+
+        .login {
+          background: #072b4f;
+        }
+        .start-for-free {
+          padding: 0 22px !important;
+          background: #BFFC00;
+          color: #000;
+          @media screen and (width< 600px) {
+            padding: 0 5px !important;
+          }
+        }
+      }
+      .upgrade {
+        button {
+          border-radius: 6px;
+          border: 1px solid #072b4f;
+          width: fit-content;
+          padding: 0 10px;
+          height: 34px;
+          flex-shrink: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 5px;
+          background: #fff;
+          color: #BFFC00;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+      .houses {
+        display: flex;
+        gap: 10px;
+        > div {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: #BFFC00;
+          font-size: 12px;
+          font-weight: 400;
+        }
+        .userImage {
+          position: relative;
+          cursor: pointer;
+          user-select: none;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+          ul {
+            position: absolute;
+            top: 40px;
+            left: -5px;
+            right: -5px;
+            border-radius: 6px;
+            background: #fff;
+            li {
+              padding: 5px;
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+              color: #000;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 300;
+              cursor: pointer;
+              &:hover {
+                background: #0599d3;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .nav-logo {
+      cursor: pointer;
+      height: 100%;
+      padding-top: 17px;
+      @media screen and (width< 600px) {
+        padding-top: 0;
+        height: auto;
+      }
+      img {
+        width: 214px;
+
+        @media screen and (width< 600px) {
+          width: 130px;
+        }
+      }
+    }
+  }
+}
+.worknav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 36px 0 73px;
+  height: 60px;
+  .nav-logo {
+    img {
+      width: 28px;
+      object-fit: contain;
+    }
+  }
+  .upgrade {
+    button {
+      border-radius: 6px;
+      border: 1px solid #072b4f;
+      width: 163px;
+      height: 34px;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      background: #fff;
+    }
+  }
+}
+
+.workSidebar {
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 340px;
+  @media screen and (width< 600px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  height: calc(100% - 0px);
+  flex-shrink: 0;
+
+  .container {
+    height: 100%;
+    @media screen and (width< 600px) {
+      position: relative;
+      z-index: 2000;
+      width: 100%;
+      .headerclose {
+        width: fit-content;
+      }
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #fff;
+      .closesvg {
+        display: none;
+        @media screen and (width< 600px) {
+          display: block;
+        }
+      }
+      @media screen and (width< 600px) {
+        width: 100%;
+        height: 40px;
+        .close,
+        .humberractive {
+          display: none !important;
+        }
+      }
+      .title {
+        display: flex;
+        font-variant-caps: all-small-caps;
+        font-weight: bolder;
+        font-family: 'Courier New', monospace;
+        font-size: 28px;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    @media screen and (width< 600px) {
+      .titleclose {
+        display: none !important;
+      }
+      .h100 {
+        height: auto;
+      }
+    }
+
+    @media screen and (width < 600px) {
+      .listcontainer {
+        position: absolute;
+        z-index: 2000;
+        inset: 0;
+        top: 40px;
+      }
+    }
+    ul {
+      list-style: none;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.56);
+      @media screen and (width < 600px) {
+        height: 140px;
+        overflow: hidden;
+      }
+
+      li {
+        background-color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        height: 48px;
+        display: flex;
+        align-items: center;
+        color: #072b4f;
+        font-size: 14px;
+        font-weight: 400;
+        justify-content: space-between;
+        padding: 0 16px;
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+    .activeli {
+      display: none;
+      @media screen and (width < 600px) {
+        height: 25px;
+        cursor: pointer;
+        background-color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #072b4f;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0 16px;
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (width< 600px) {
+  .containerclose {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .d-none-m {
+    display: none !important;
+  }
+}

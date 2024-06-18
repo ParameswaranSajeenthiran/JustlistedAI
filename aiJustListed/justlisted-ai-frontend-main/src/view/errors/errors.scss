@@ -1,0 +1,22 @@
+.errors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .title{
+            font-size: 200px;
+            font-weight: 600;
+            padding: 0;
+        }
+        p{
+            font-size: 80px;
+        }
+    }
+
+}

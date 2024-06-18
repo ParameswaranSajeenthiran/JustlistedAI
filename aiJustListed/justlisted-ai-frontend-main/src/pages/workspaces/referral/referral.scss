@@ -1,0 +1,76 @@
+.referral {
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  padding: 40px 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px;
+  .title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    background: var(
+      --Primary,
+      linear-gradient(90deg, #ee4335 0%, #f9aa41 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  p {
+    width: 484px;
+    text-align: center;
+    color: #072b4f;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  a {
+    color: #072b4f;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration-line: underline;
+  }
+  .invite {
+    color: #072b4f;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .copy-link {
+    color: #072b4f;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .form-copy {
+    .input {
+      display: flex;
+      align-items: center;
+      input {
+        width: 692px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 6px 0 0 6px;
+        border: 1px solid #000;
+        outline: none;
+        padding: 5px ;
+      }
+      button {
+        border-radius: 0px 6px 6px 0px;
+        border: 1px solid #000;
+        background: #072b4f;
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.welcome {
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .houses {
+      display: flex;
+      gap: 10px;
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+  .container {
+    .welcome-message {
+      width: 100%;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      gap: 20px;
+      @media screen and (width< 600px) {
+        gap: 10px;
+      }
+      .userName {
+        color: #BFFC00;
+        text-align: center;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+      }
+      p {
+        color: #072b4f;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      .buttons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        @media screen and (width< 600px) {
+          flex-direction: column;
+        }
+        a{
+          height: 50px;
+          width: 220px;
+          @media screen and (width< 600px) {
+            width: 100%;
+          }
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 12px;
+          font-size: 14px;
+          font-weight: 600;
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+   
+  }
+}

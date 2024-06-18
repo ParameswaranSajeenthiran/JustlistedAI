@@ -1,0 +1,154 @@
+.footer {
+  width: 100%;
+  height: 387px;
+  flex-shrink: 0;
+  background:
+    #BFFC00 100%
+  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (width< 600px) {
+    height: auto;
+    padding: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    width: 79%;
+    @media screen and (width< 600px) {
+      gap: 50px;
+      align-items: center;
+    }
+    > div {
+      display: flex;
+      justify-content: space-between;
+    }
+    .container-row {
+      @media screen and (width< 600px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nvigations {
+        @media screen and (width< 600px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        img {
+          width: 204px;
+          height: 37px;
+        }
+
+        .footer-nav-links {
+          margin-top: 31px;
+
+          a {
+            color: #072b4f;
+            font-size: 16px;
+            font-style: normal;
+            font-family: 'Negroni';
+            font-weight: 500;
+            margin-right: 24px;
+            @media screen and (width< 600px) {
+              font-size: 10px;
+            }
+          }
+          .nav-buttonactive{
+            font-weight: 600;
+          }
+        }
+      }
+      .subscribe {
+        @media screen and (width< 600px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        label {
+          color: var(--gray-900, #2a3342);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 28px;
+        }
+        form {
+          display: flex;
+          gap: 20px;
+          margin-top: 10px;
+          input {
+            width: 226px;
+            height: 46px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--gray-200, #d5dae1);
+            background: var(--white-900, #fff);
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+            @media screen and (width< 600px) {
+              height: 36px;
+              font-size: 14px;
+            }
+          }
+          button {
+            width: 117px;
+            height: 46px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            // background: var(
+            //   --Primary,
+            //   linear-gradient(90deg, #ee4335 0%, #f9aa41 100%)
+            // );
+            // color: #fff;
+            font-size: 16px;
+            font-family: 'Negroni';
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 150% */
+            @media screen and (width< 600px) {
+              width: 100px;
+              height: 36px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .terms-rights {
+      align-items: center;
+      @media screen and (width< 600px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .rights {
+        color: #072b4f;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        @media screen and (width< 600px) {
+          font-size: 10px;
+        }
+      }
+      .nav-terms {
+        display: flex;
+        gap: 36px;
+        @media screen and (width< 600px) {
+          gap: 10px;
+        }
+        a {
+          color: #072b4f;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 150% */
+          @media screen and (width< 600px) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
